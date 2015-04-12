@@ -1,0 +1,411 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Puritan', sans-serif;
+  color: white;
+  background-color: #000;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+a {
+  color: #3ebe9b;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #25715c;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(231, 176, 47, 0), rgba(231, 176, 47, 0.75), rgba(231, 176, 47, 0));
+  background-image: -moz-linear-gradient(left, rgba(231, 176, 47, 0), rgba(231, 176, 47, 0.75), rgba(231, 176, 47, 0));
+  background-image: -ms-linear-gradient(left, rgba(231, 176, 47, 0), rgba(231, 176, 47, 0.75), rgba(231, 176, 47, 0));
+  background-image: -o-linear-gradient(left, rgba(231, 176, 47, 0), rgba(231, 176, 47, 0.75), rgba(231, 176, 47, 0));
+}
+.light {
+  font-weight: 400;
+}
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: 'Sue Ellen Francisco', cursive;
+  background-color: black;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: white;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom .nav li a {
+  font-size: 18px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(../img/backgrounds/motherrockstar.jpg) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 65px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0 {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.philosophy-section,
+.tour-section,
+.services-section,
+.faq-section,
+.testimonials-section,
+.contact-section {
+  width: 100%;
+  padding: 75px 0;
+  color: white;
+}
+.philosophy-section {
+  background: url(../img/backgrounds/philosophy-color.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.services-section {
+  background: url(../img/backgrounds/services.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.faq-section {
+  background: url(../img/backgrounds/faq.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.contact-section {
+  background: url(../img/backgrounds/contact.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#faq h3 {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+#faq li a {
+  font-size: 20px;
+}
+#faq ol {
+  font-size: 20px;
+}
+#faq .faq-block {
+  padding-top: 55px;
+}
+.faq-menu {
+  margin-botom: 30px;
+}
+#testimonials p {
+  vertical-align: middle;
+}
+.services-section .additional-boarders {
+  font-size: 12px;
+  font-style: italic;
+}
+.services-section .table td {
+  font-size: 20px;
+}
+.text-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.blue-box {
+  background-color: rgba(17, 34, 119, 0.7);
+}
+.red-box {
+  background-color: rgba(188, 48, 25, 0.8);
+}
+.purple-box {
+  background-color: rgba(61, 15, 43, 0.7);
+}
+.turquoise-box {
+  background-color: rgba(62, 190, 155, 0.9);
+}
+.brick-pattern {
+  background: #e7b02f;
+  background: linear-gradient(135deg, #e7b02f 22px, #eaa601 22px, #eaa601 24px, transparent 24px, transparent 67px, #eaa601 67px, #eaa601 69px, transparent 69px), linear-gradient(225deg, #e7b02f 22px, #eaa601 22px, #eaa601 24px, transparent 24px, transparent 67px, #eaa601 67px, #eaa601 69px, transparent 69px) 0 64px;
+  background-color: #e7b02f;
+  background-size: 64px 128px;
+}
+.zig-zag-pattern {
+  background: #16277c;
+  background: linear-gradient(135deg, #112277 25%, transparent 25%) -50px 0, linear-gradient(225deg, #112277 25%, transparent 25%) -50px 0, linear-gradient(315deg, #112277 25%, transparent 25%), linear-gradient(45deg, #112277 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: #16277c;
+}
+.circle-pattern {
+  background: #c7300e;
+  background-color: #c7300e;
+  background-image: radial-gradient(#bf2806 9px, transparent 10px), repeating-radial-gradient(#bf2806 0, #bf2806 4px, transparent 5px, transparent 20px, #bf2806 21px, #bf2806 25px, transparent 26px, transparent 50px);
+  background-size: 30px 30px, 90px 90px;
+  background-position: 0 0;
+}
+.scale-pattern {
+  background: #bf2806;
+  background-color: #483665;
+  background-image: radial-gradient(circle at 100% 150%, #483665 24%, #433160 25%, #433160 28%, #483665 29%, #483665 36%, #433160 36%, #433160 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, #483665 24%, #433160 25%, #433160 28%, #483665 29%, #483665 36%, #433160 36%, #433160 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, #433160 10%, #483665 11%, #483665 23%, #433160 24%, #433160 30%, #483665 31%, #483665 43%, #433160 44%, #433160 50%, #483665 51%, #483665 63%, #433160 64%, #433160 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, #433160 5%, #483665 6%, #483665 15%, #433160 16%, #433160 20%, #483665 21%, #483665 30%, #433160 31%, #433160 35%, #483665 36%, #483665 45%, #433160 46%, #433160 49%, transparent 50%, transparent), radial-gradient(circle at 0 50%, #433160 5%, #483665 6%, #483665 15%, #433160 16%, #433160 20%, #483665 21%, #483665 30%, #433160 31%, #433160 35%, #483665 36%, #483665 45%, #433160 46%, #433160 49%, transparent 50%, transparent);
+  background-size: 100px 50px;
+}
+.curtain-pattern {
+  background: #e7b02f;
+  background-color: #026873;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 50%, transparent 50%), linear-gradient(90deg, rgba(255, 255, 255, 0.13) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.17) 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+  background-size: 13px, 29px, 37px, 53px;
+}
+#map {
+  width: 100%;
+  height: 200px;
+}
+@media (min-width: 767px) {
+  .download-section {
+    padding: 100px 0;
+  }
+  #map {
+    height: 400px;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+.btn-default {
+  border: 1px solid #3ebe9b;
+  color: #3ebe9b;
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #3ebe9b;
+  outline: none;
+  color: black;
+  background-color: #3ebe9b;
+}
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+footer {
+  padding: 50px 0;
+}
+footer p {
+  margin: 0;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
