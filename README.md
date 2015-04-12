@@ -14,3 +14,5 @@ The site relies on the following:
 * Add Lazy Loading for images
 * Add Grunt file compression
 * Add Google Analytics
+* Add meta data
+* Add favicon
