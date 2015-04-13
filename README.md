@@ -9,6 +9,7 @@ The site relies on the following:
 * [Start Bootstrap - Grayscale](https://github.com/IronSummitMedia/startbootstrap-grayscale)
 * [LESS](http://lesscss.org/)
 * CSS3 patterns by [Lea Verou](http://lea.verou.me/css3patterns/)
+* [Lightslider](http://sachinchoolur.github.io/lightslider/)
 
 ## TO DO
 * Add Lazy Loading for images
