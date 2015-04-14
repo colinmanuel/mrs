@@ -154,7 +154,7 @@ hr {
     font-size: 65px;
   }
   .intro .intro-body .intro-text {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 .btn-circle {
@@ -259,6 +259,13 @@ hr {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+.contact-section h4 {
+  margin: 0;
+}
+.reservations-section h2,
+.reservations-section h3 {
+  text-align: center;
 }
 #faq h3 {
   font-size: 22px;
