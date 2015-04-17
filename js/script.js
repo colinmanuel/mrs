@@ -56,7 +56,9 @@ function setCopyright(){
 setCopyright();
 
 
-
+ $("div.lazy").lazyload({
+      threshold : 200
+  });
 
 $(document).ready(function() {
     $("#lightSlider").lightSlider({
