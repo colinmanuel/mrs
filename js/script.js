@@ -55,6 +55,9 @@ function setCopyright(){
 };
 setCopyright();
 
+
+
+
 $(document).ready(function() {
     $("#lightSlider").lightSlider({
     gallery: true,
