@@ -14,7 +14,8 @@ The site relies on the following:
 
 ## TO DO
 * ~~Add Lazy Loading for images~~
-* Add Grunt file compression
+* ~~Add Grunt JS compression~~
+* Add Grunt image compression
 * ~~Add Google Analytics~~
 * ~~Add meta data~~
 * ~~Add favicon~~
