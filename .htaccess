@@ -1,0 +1,31 @@
+Redirect /home.htm http://www.motherrockstardogs.com
+
+Redirect /our_philosophy.htm http://www.motherrockstardogs.com/#philosophy
+
+Redirect /tour.htm http://www.motherrockstardogs.com/#tour
+
+Redirect /rates.htm http://www.motherrockstardogs.com/#services
+
+Redirect /oper_dates.htm http://www.motherrockstardogs.com/#operating-dates
+
+Redirect /make_a_reservation.htm http://www.motherrockstardogs.com/#reservations
+
+Redirect /terms__forms.htm http://www.motherrockstardogs.com/#terms
+
+Redirect /faq.htm http://www.motherrockstardogs.com/#faq
+
+Redirect /testimonials.htm http://www.motherrockstardogs.com/#testimonials
+
+Redirect /contact_us.htm http://www.motherrockstardogs.com/#contact
+
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{SERVER_ADDR} !=127.0.0.1
+    RewriteCond %{SERVER_ADDR} !=::1
+    RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+
