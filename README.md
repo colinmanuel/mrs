@@ -10,10 +10,11 @@ The site relies on the following:
 * [LESS](http://lesscss.org/)
 * CSS3 patterns by [Lea Verou](http://lea.verou.me/css3patterns/)
 * [Lightslider](http://sachinchoolur.github.io/lightslider/)
+* [Grunt](http://gruntjs.com/)
 
 ## TO DO
-* Add Lazy Loading for images
+* ~~Add Lazy Loading for images~~
 * Add Grunt file compression
-* Add Google Analytics
-* Add meta data
-* Add favicon
+* ~~Add Google Analytics~~
+* ~~Add meta data~~
+* ~~Add favicon~~
